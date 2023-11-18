@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Tabel Kesehatan</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Tabel Kesehatan</h1>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="kesehatan.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tabel.html">Tabel Kesehatan</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="table-content">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Pasien</th>
+              <th>Keluhan</th>
+              <th>Tanggal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Fari Eka</td>
+              <td>Sakit kepala dan demam</td>
+              <td>2023-11-18</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ainan Yasifa</td>
+              <td>Gangguan pencernaan</td>
+              <td>2023-11-19</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form action="#" method="post">
+          <label for="nama">Nama Pasien:</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="keluhan">Keluhan:</label>
+          <textarea id="keluhan" name="keluhan" rows="4" required></textarea>
+
+          <label for="tanggal">Tanggal:</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+
+          <input type="submit" value="Tambahkan Data" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
